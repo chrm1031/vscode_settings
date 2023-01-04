@@ -50,5 +50,5 @@ VSCodeの設定やメモ用リポジトリ
 | Ctrl + 1 | 左のエディターへフォーカス |
 | Ctrl + 2 | サイドエディターへフォーカス |
 | Ctrl + 3 | 右のエディターへフォーカス |
-| Ctrl + Shift + Left | 左のエディターへタブを移動 |
-| Ctrl + Shift + Right | 右のエディターへタブを移動 |
+| Ctrl + Alt + Left | 左のエディターへタブを移動 |
+| Ctrl + Alt + Right | 右のエディターへタブを移動 |
