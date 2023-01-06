@@ -36,6 +36,8 @@ VSCodeの設定やメモ用リポジトリ
 ## よく使うコマンド & 覚えたいコマンド
 | キー | 動作 |
 | - | - |
+| Ctrl + H | 置換 |
+| Ctrl + Alt + Enter | 全て置換 |
 | Ctrl + Home | ファイルの先頭に移動 |
 | Ctrl + End | ファイルの末尾に移動 |
 | Ctrl + Down | 行を下へスクロール |
@@ -43,7 +45,6 @@ VSCodeの設定やメモ用リポジトリ
 | Alt + PageDown | 画面を下にスクロール |
 | Ctrl + Tab | 次のタブへ移動 |
 | Ctrl + Shift + Tab | 前のタブへ移動 |
-| Ctrl + Tab | 次のタブへ移動 |
 | Alt + Left | 前に戻る |
 | Alt + Right | 次に進む |
 | Ctrl + \ | エディターを分割 |

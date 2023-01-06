@@ -1,23 +1,31 @@
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "-workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
+  // 前のエディターにフォーカス
   {
     "key": "ctrl+shift+tab",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+pageup",
-    "command": "-workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    "command": "-workbench.action.previousEditor"
+  },
+  // 次のエディターにフォーカス
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  // 前のエディターグループへフォーカス
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  // 次のエディターグループへフォーカス
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.focusNextGroup"
   }
 ]
