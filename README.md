@@ -2,6 +2,11 @@
 VSCodeの設定やメモ用リポジトリ
 
 ## キーボードショートカットの変更・確認方法
+
+### GUIで修正する場合
+1. ```Ctrl + K, Ctrl + S```でキーボードショートカットを開く
+
+### 直接ファイルを修正する場合
 1. コマンドパレットを開く
 ```Ctrl + Shift + p```
 
@@ -10,25 +15,33 @@ VSCodeの設定やメモ用リポジトリ
 3. キーバインドを設定する
 ```keybindings.json
 [
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "-workbench.action.terminal.focusNext",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
-  },
+  // 前のエディターにフォーカス
   {
     "key": "ctrl+shift+tab",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+pageup",
-    "command": "-workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    "command": "-workbench.action.previousEditor"
+  },
+  // 次のエディターにフォーカス
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  // 前のエディターグループへフォーカス
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  // 次のエディターグループへフォーカス
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.focusNextGroup"
   }
 ]
 ```
